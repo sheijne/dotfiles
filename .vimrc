@@ -27,15 +27,17 @@ Plugin 'Shougo/neocomplcache.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-fugitive'
 Plugin 'justinmk/vim-syntax-extra'
+Plugin 'majutsushi/tagbar'
 
 filetype plugin indent on " required
 
 syntax on
 filetype plugin on
+let mapleader = ","
 
 " settings nerdtreetabs: always open en focus on files if opening
 let g:nerdtree_tabs_focus_on_files=1
-map <C-e> :NERDTreeToggle<CR>
+map <silent> <Leader>e :NERDTreeToggle<CR>
 
 " settings for complete in commandline: first longest then list
 set wildmenu
@@ -60,6 +62,10 @@ let g:LatexBox_latexmk_options = "-pv -pdf"
 
 " delimitMate settings
 let delimitMate_expand_cr=1
+
+" Tagbar settings
+let g:tagbar_autoclose=1
+nnoremap <silent> <Leader>t :TagbarToggle<CR>
 
 " general settings 
 set background=dark
@@ -90,7 +96,6 @@ set backspace=indent,eol,start
 " mappings: for long lines over multiple rows, do proper navigation
 map j gj
 map k gk
-
 
 " Drupal stuff
 if has("autocmd")
