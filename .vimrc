@@ -35,8 +35,12 @@ syntax on
 filetype plugin on
 let mapleader = ","
 
+" Settings of syntastic
+let g:syntastic_cpp_compiler_options = '-std=c++0x'
+
 " settings nerdtreetabs: always open en focus on files if opening
 let g:nerdtree_tabs_focus_on_files=1
+let g:NERDTreeShowHidden=1
 map <silent> <Leader>e :NERDTreeToggle<CR>
 
 " settings for complete in commandline: first longest then list
@@ -64,7 +68,6 @@ let g:LatexBox_latexmk_options = "-pv -pdf"
 let delimitMate_expand_cr=1
 
 " Tagbar settings
-let g:tagbar_autoclose=1
 nnoremap <silent> <Leader>t :TagbarToggle<CR>
 
 " general settings 
