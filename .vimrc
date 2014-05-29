@@ -74,6 +74,9 @@ nnoremap <silent> <Leader>t :TagbarToggle<CR>
 set background=dark
 colorscheme default
 
+set cursorcolumn;
+set cursorline;
+
 set scrolloff=3
 set number
 set linebreak
