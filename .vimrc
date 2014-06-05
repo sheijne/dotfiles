@@ -102,6 +102,12 @@ set backspace=indent,eol,start
 map j gj
 map k gk
 
+" Easier navigations through windows
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Drupal stuff
 if has("autocmd")
   " Drupal *.module and *.install files.
