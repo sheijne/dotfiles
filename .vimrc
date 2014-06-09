@@ -23,11 +23,13 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'groenewege/vim-less'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'scrooloose/syntastic'
-Plugin 'Shougo/neocomplcache.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-fugitive'
 Plugin 'justinmk/vim-syntax-extra'
 Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'Valloric/YouCompleteMe'
 
 filetype plugin indent on " required
 
@@ -46,20 +48,6 @@ map <silent> <Leader>e :NERDTreeToggle<CR>
 " settings for complete in commandline: first longest then list
 set wildmenu
 set wildmode=longest,list:longest
-
-" neocomplcache autocomplete
-let g:neocomplcache_enable_at_startup=1  
-let g:neocomplcache_enable_auto_select=1  
-let g:neocomplcache_enable_smart_case=1
-let g:neocomplcache_max_list=10  
-inoremap <expr><C-l>     neocomplcache#complete_common_string() 
-
-" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
 " latexbox settings: necessary for auto viewing and highlighting properly
 let g:LatexBox_latexmk_options = "-pv -pdf"
@@ -98,6 +86,7 @@ set listchars=tab:>.
 set ffs=unix,dos,mac
 set backspace=indent,eol,start
 
+
 " mappings: for long lines over multiple rows, do proper navigation
 map j gj
 map k gk
@@ -123,4 +112,9 @@ endif
 
 " Latex spelling
 autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
+
+" c++ specific settings for thesis
+autocmd FileType cpp set shiftwidth=4
+autocmd FileType cpp set tabstop=4
+
 
