@@ -84,8 +84,7 @@ set list
 set listchars=tab:>.
 
 set ffs=unix,dos,mac
-set backspace=indent,eol,start
-
+set backspace=indent,eol,start 
 
 " mappings: for long lines over multiple rows, do proper navigation
 map j gj
@@ -117,4 +116,6 @@ autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
 autocmd FileType cpp set shiftwidth=4
 autocmd FileType cpp set tabstop=4
 
+" ycm settings
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
