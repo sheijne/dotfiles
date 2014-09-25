@@ -30,6 +30,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-scripts/TaskList.vim'
 
 filetype plugin indent on " required
 
@@ -56,7 +57,7 @@ let g:LatexBox_latexmk_options = "-pv -pdf"
 let delimitMate_expand_cr=1
 
 " Tagbar settings
-nnoremap <silent> <Leader>t :TagbarToggle<CR>
+nnoremap <silent> <Leader>T :TagbarToggle<CR>
 
 " general settings 
 set background=dark
