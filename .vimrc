@@ -120,3 +120,7 @@ autocmd FileType cpp set tabstop=4
 " ycm settings
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
+" ignore white spaces in diff mode
+if &diff
+    set diffopt+=iwhite
+endif
