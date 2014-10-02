@@ -61,7 +61,7 @@ nnoremap <silent> <Leader>T :TagbarToggle<CR>
 
 " general settings 
 set background=dark
-colorscheme zellner
+colorscheme ir_black
 
 set cursorline
 
