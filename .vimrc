@@ -32,9 +32,9 @@ Plugin 'tpope/vim-repeat'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/TaskList.vim'
 Plugin 'Lokaltog/vim-easymotion'
+Plugin 'bling/vim-airline'
 
-filetype plugin indent on " required
-
+filetype plugin indent on " required 
 syntax on
 filetype plugin on
 let mapleader = ","
@@ -42,10 +42,15 @@ let mapleader = ","
 " Settings of syntastic
 let g:syntastic_cpp_compiler_options = '-std=c++0x'
 
-" settings nerdtreetabs: always open en focus on files if opening
+" settings nerdtree(tabs): always open en focus on files if opening
 let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeShowHidden=1
 map <silent> <Leader>e :NERDTreeToggle<CR>
+
+" airline settings 
+set laststatus=2
+let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
+let g:airline#extensions#tabline#fnamemod = ':t' " show just name
 
 " settings for complete in commandline: first longest then list
 set wildmenu
@@ -64,6 +69,7 @@ nnoremap <silent> <Leader>T :TagbarToggle<CR>
 set background=dark
 colorscheme ir_black
 
+" regular core vim settings
 set cursorline
 
 set scrolloff=3
@@ -98,6 +104,37 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" buffer movement
+set hidden " hides abandoned buffers
+
+" To open a new empty buffer
+nmap <leader>T :enew<cr> 
+" Move to the next buffer
+nmap <leader>l :bnext<CR> 
+" Move to the previous buffer
+nmap <leader>h :bprevious<CR> 
+" Close the current buffer and move to the previous one
+nmap <leader>bq :bp <BAR> bd #<CR>
+
+
+" Latex spelling
+autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
+
+" ycm settings
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+
+" ignore white spaces in diff mode
+if &diff
+    set diffopt+=iwhite
+endif
+
+" Tabs in make files
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
+
+" c++ specific settings for thesis
+autocmd FileType cpp set shiftwidth=4
+autocmd FileType cpp set tabstop=4
+
 " Drupal stuff
 if has("autocmd")
   " Drupal *.module and *.install files.
@@ -111,17 +148,3 @@ if has("autocmd")
   augroup END
 endif
 
-" Latex spelling
-autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
-
-" c++ specific settings for thesis
-autocmd FileType cpp set shiftwidth=4
-autocmd FileType cpp set tabstop=4
-
-" ycm settings
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-
-" ignore white spaces in diff mode
-if &diff
-    set diffopt+=iwhite
-endif
