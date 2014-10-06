@@ -31,6 +31,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/TaskList.vim'
+Plugin 'Lokaltog/vim-easymotion'
 
 filetype plugin indent on " required
 
