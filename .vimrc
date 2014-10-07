@@ -18,7 +18,6 @@ Plugin 'gmarik/vundle'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tmhedberg/matchit'
-Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'groenewege/vim-less'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
@@ -107,8 +106,6 @@ nnoremap <C-H> <C-W><C-H>
 " buffer movement
 set hidden " hides abandoned buffers
 
-" To open a new empty buffer
-nmap <leader>T :enew<cr> 
 " Move to the next buffer
 nmap <leader>l :bnext<CR> 
 " Move to the previous buffer
@@ -127,6 +124,8 @@ let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 if &diff
     set diffopt+=iwhite
 endif
+
+set diffopt+=vertical
 
 " Tabs in make files
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
