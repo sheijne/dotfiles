@@ -84,8 +84,8 @@ set expandtab
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 
 set list
 set listchars=tab:>.
@@ -128,11 +128,7 @@ endif
 set diffopt+=vertical
 
 " Tabs in make files
-autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0
-
-" c++ specific settings for thesis
-autocmd FileType cpp set shiftwidth=4
-autocmd FileType cpp set tabstop=4
+autocmd FileType make set noexpandtab 
 
 " Drupal stuff
 if has("autocmd")
@@ -145,5 +141,5 @@ if has("autocmd")
     autocmd BufRead,BufNewFile *.profile set filetype=php
     autocmd BufRead,BufNewFile *.view set filetype=php
   augroup END
-endif
+endif 
 
