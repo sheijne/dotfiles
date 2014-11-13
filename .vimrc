@@ -20,9 +20,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'tmhedberg/matchit'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'groenewege/vim-less'
-Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'scrooloose/syntastic'
-Plugin 'Raimondi/delimitMate'
 Plugin 'tpope/vim-fugitive'
 Plugin 'justinmk/vim-syntax-extra'
 Plugin 'majutsushi/tagbar'
@@ -32,6 +30,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/TaskList.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'bling/vim-airline'
+Plugin 'flazz/vim-colorschemes'
 
 filetype plugin indent on " required 
 syntax on
@@ -65,11 +64,12 @@ let delimitMate_expand_cr=1
 nnoremap <silent> <Leader>T :TagbarToggle<CR>
 
 " general settings 
-set background=dark
-colorscheme ir_black
+set background=light
+colorscheme solarized
 
 " regular core vim settings
 set cursorline
+set showmatch
 
 set scrolloff=3
 set number
