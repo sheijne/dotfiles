@@ -31,6 +31,7 @@ Plugin 'vim-scripts/TaskList.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'altercation/vim-colors-solarized'
 
 filetype plugin indent on " required 
 syntax on
@@ -65,7 +66,7 @@ nnoremap <silent> <Leader>T :TagbarToggle<CR>
 
 " general settings 
 set background=light
-colorscheme solarized
+colorscheme molokai
 
 " regular core vim settings
 set cursorline
