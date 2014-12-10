@@ -98,6 +98,9 @@ set backspace=indent,eol,start
 map j gj
 map k gk
 
+" jk in insert mode will escape to regular mode
+imap jk <Esc>
+
 " Easier navigations through windows
 nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
