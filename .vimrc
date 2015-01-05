@@ -32,6 +32,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
 
 filetype plugin indent on " required 
 syntax on
@@ -56,7 +57,7 @@ set wildmenu
 set wildmode=longest,list:longest
 
 " latexbox settings: necessary for auto viewing and highlighting properly
-let g:LatexBox_latexmk_options = "-pv -pdf"
+let g:LatexBox_latexmk_options = "-pvc -pdfps"
 
 " delimitMate settings
 let delimitMate_expand_cr=1
