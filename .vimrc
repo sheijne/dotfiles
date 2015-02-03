@@ -36,6 +36,7 @@ Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'mileszs/ack.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'fatih/vim-go'
 
 filetype plugin indent on " required 
 syntax on
