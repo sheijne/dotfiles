@@ -74,6 +74,9 @@ nnoremap <silent> <Leader>T :TagbarToggle<CR>
 set background=light
 colorscheme molokai
 
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
 " regular core vim settings
 set cursorline
 set showmatch
