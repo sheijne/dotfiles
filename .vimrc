@@ -37,6 +37,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
+Plugin 'junegunn/vim-easy-align'
 
 filetype plugin indent on " required 
 syntax on
@@ -53,7 +54,7 @@ map <silent> <Leader>e :NERDTreeToggle<CR>
 
 " airline settings 
 set laststatus=2
-let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
+let g:airline#extensions#tabline#enabled=1 " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " show just name
 
 " settings for complete in commandline: first longest then list
@@ -66,6 +67,12 @@ let g:LatexBox_latexmk_preview_continuously=1
 
 " delimitMate settings
 let delimitMate_expand_cr=1
+
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 
 " Tagbar settings
 nnoremap <silent> <Leader>T :TagbarToggle<CR>
@@ -132,6 +139,7 @@ autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
 
 " ycm settings
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf = 0
 
 " ignore white spaces in diff mode
 if &diff
