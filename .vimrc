@@ -38,6 +38,7 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'valloric/MatchTagAlways'
 
 filetype plugin indent on " required 
 syntax on
@@ -78,14 +79,14 @@ nmap ga <Plug>(EasyAlign)
 nnoremap <silent> <Leader>T :TagbarToggle<CR>
 
 " general settings 
-set background=light
-colorscheme molokai
+set t_Co=256
+set background=dark
+colorscheme distinguished
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
 " regular core vim settings
-set cursorline
 set showmatch
 
 set scrolloff=3
