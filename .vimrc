@@ -134,10 +134,6 @@ nmap <leader>h :bprevious<CR>
 " Close the current buffer and move to the previous one
 nmap <leader>bq :bp <BAR> bd #<CR>
 
-
-" Latex spelling
-autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us
-
 " ycm settings
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
@@ -165,3 +161,8 @@ if has("autocmd")
   augroup END
 endif 
 
+" Regular files need spelling and no highlight end 
+augroup noProg
+    autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us 
+    autocmd BufRead,BufNewFile *.tex match OverLength // 
+augroup END
