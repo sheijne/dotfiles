@@ -80,8 +80,8 @@ nnoremap <silent> <Leader>T :TagbarToggle<CR>
 
 " general settings 
 set t_Co=256
-set background=dark
-colorscheme distinguished
+set background=light
+colorscheme buttercream
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
