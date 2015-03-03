@@ -80,11 +80,8 @@ nnoremap <silent> <Leader>T :TagbarToggle<CR>
 
 " general settings 
 set t_Co=256
-set background=light
-colorscheme buttercream
-
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+set background=dark
+colorscheme solarized
 
 " regular core vim settings
 set showmatch
@@ -164,7 +161,5 @@ endif
 " Regular files need spelling and no highlight end 
 augroup noProg
     autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us 
-    autocmd BufRead,BufNewFile *.txt match OverLength // 
     autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us 
-    autocmd BufRead,BufNewFile *.tex match OverLength // 
 augroup END
