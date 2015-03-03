@@ -39,6 +39,7 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'fatih/vim-go'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'valloric/MatchTagAlways'
+Plugin 'skammer/vim-css-color'
 
 filetype plugin indent on " required 
 syntax on
@@ -81,7 +82,7 @@ nnoremap <silent> <Leader>T :TagbarToggle<CR>
 " general settings 
 set t_Co=256
 set background=dark
-colorscheme solarized
+colorscheme jellybeans " solarized lucias (dark) buttercream (light) molokai (dark) jellybean (dark) ir_black (dark) iceberg
 
 " regular core vim settings
 set showmatch
