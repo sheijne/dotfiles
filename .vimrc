@@ -40,6 +40,7 @@ Plugin 'fatih/vim-go'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'valloric/MatchTagAlways'
 Plugin 'skammer/vim-css-color'
+Plugin 'vim-scripts/closetag.vim'
 
 filetype plugin indent on " required 
 syntax on
