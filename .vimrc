@@ -14,7 +14,7 @@ call vundle#rc()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/vundle'
 
-" installed plugins
+"" installed plugins
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tmhedberg/matchit'
@@ -31,7 +31,6 @@ Plugin 'vim-scripts/TaskList.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'mileszs/ack.vim'
 Plugin 'Raimondi/delimitMate'
@@ -41,6 +40,7 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'valloric/MatchTagAlways'
 Plugin 'skammer/vim-css-color'
 Plugin 'vim-scripts/closetag.vim'
+Plugin 'tpope/vim-unimpaired'
 
 filetype plugin indent on " required 
 syntax on
@@ -49,6 +49,7 @@ let mapleader = ","
 
 " Settings of syntastic
 let g:syntastic_cpp_compiler_options = '-std=c++0x'
+let g:syntastic_always_populate_loc_list = 1
 
 " settings nerdtree(tabs): always open en focus on files if opening
 let g:nerdtree_tabs_focus_on_files=1
