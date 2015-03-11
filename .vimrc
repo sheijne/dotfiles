@@ -88,6 +88,7 @@ colorscheme jellybeans " solarized lucias (dark) buttercream (light) molokai (da
 
 " regular core vim settings
 set showmatch
+set cursorline
 
 set scrolloff=3
 set number
