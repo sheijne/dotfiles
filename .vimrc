@@ -138,6 +138,7 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 " ycm settings
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " ignore white spaces in diff mode
 if &diff
