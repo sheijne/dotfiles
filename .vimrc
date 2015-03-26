@@ -48,7 +48,7 @@ filetype plugin on
 let mapleader = ","
 
 " Settings of syntastic
-let g:syntastic_cpp_compiler_options = '-std=c++0x'
+let g:syntastic_cpp_compiler_options = '-std=c++11'
 let g:syntastic_always_populate_loc_list = 1
 
 " settings nerdtree(tabs): always open en focus on files if opening
