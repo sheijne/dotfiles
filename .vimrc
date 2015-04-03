@@ -32,7 +32,7 @@ Plugin 'Lokaltog/vim-easymotion'
 Plugin 'bling/vim-airline'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
-Plugin 'mileszs/ack.vim'
+Plugin 'rking/ag.vim'
 Plugin 'Raimondi/delimitMate'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'junegunn/vim-easy-align'
@@ -81,8 +81,8 @@ nnoremap <silent> <Leader>T :TagbarToggle<CR>
 
 " general settings 
 set t_Co=256
-set background=dark
-colorscheme jellybeans " solarized lucias (dark) buttercream (light) molokai (dark) jellybean (dark) ir_black (dark) iceberg
+set background=light
+colorscheme lucius " solarized lucias (dark) buttercream (light) molokai (dark) jellybean (dark) ir_black (dark) iceberg
 
 " regular core vim settings
 set showmatch
