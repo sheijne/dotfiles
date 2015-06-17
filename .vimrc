@@ -41,6 +41,7 @@ Plugin 'vim-scripts/closetag.vim'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
+Plugin 'severin-lemaignan/vim-minimap'
 
 filetype plugin indent on " required 
 syntax on
@@ -84,7 +85,7 @@ nnoremap <silent> <Leader>T :TagbarToggle<CR>
 " general settings 
 set t_Co=256
 set background=light
-colorscheme molokai " solarized lucias (dark) buttercream (light) molokai (dark) jellybean (dark) ir_black (dark) iceberg
+colorscheme molokai " solarized lucias (dark) buttercream (light) molokai (dark) jellybean (dark) ir_black (dark) iceberg gotham
 
 " regular core vim settings
 set showmatch
