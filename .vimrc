@@ -41,7 +41,6 @@ Plugin 'vim-scripts/closetag.vim'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
-Plugin 'severin-lemaignan/vim-minimap'
 
 filetype plugin indent on " required 
 syntax on
