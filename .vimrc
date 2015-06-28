@@ -90,9 +90,9 @@ map j gj
 map k gk
 
 " Fugitive mappings
-nmap ,gs :Gstatus<cr>
-nmap ,gc :Gcommit<cr>
-nmap ,gd :Gdiff<cr>
+nmap <leader>gs :Gstatus<cr>
+nmap <leader>gc :Gcommit<cr>
+nmap <leader>gd :Gdiff<cr>
 
 " Easier navigations through windows
 nnoremap <C-J> <C-W><C-J>
