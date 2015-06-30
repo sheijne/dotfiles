@@ -49,7 +49,7 @@ syntax on
 " general settings 
 set t_Co=256
 set background=dark
-colorscheme hemisu " solarized lucias (dark) buttercream (light) molokai (dark) jellybean (dark) ir_black (dark) iceberg molokai
+colorscheme hybrid " solarized lucias (dark) buttercream (light) molokai (dark) jellybean (dark) ir_black (dark) iceberg molokai hemisu
 
 set autoread " auto reload files on change
 
