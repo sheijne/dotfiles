@@ -1,9 +1,10 @@
-set nocompatible          " be iMproved, required
-filetype off              " required 
+" Required 
+set nocompatible          
+filetype off             
 
-let mapleader = ","
 
-" set the runtime path to include Vundle and initialize
+" vundle
+
 " Linux: (just check path really)
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -13,10 +14,8 @@ call vundle#rc()
 " let path='~/vimfiles/bundle'
 " call vundle#rc(path)
 
-" let Vundle manage Vundle, required
 Plugin 'gmarik/vundle'
 
-"" installed plugins
 Plugin 'scrooloose/nerdtree'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tmhedberg/matchit'
@@ -28,7 +27,6 @@ Plugin 'justinmk/vim-syntax-extra'
 Plugin 'majutsushi/tagbar'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-repeat'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/TaskList.vim'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'bling/vim-airline'
@@ -42,46 +40,56 @@ Plugin 'valloric/MatchTagAlways'
 Plugin 'vim-scripts/closetag.vim'
 Plugin 'tpope/vim-unimpaired'
 
-filetype plugin indent on " required 
+" General settings
+let mapleader = " "         " Spacebar map leader
+filetype plugin indent on   " Identify language specific indent options
 filetype plugin on
-syntax on
+syntax on                   " use syntax..
 
-" general settings 
+set autoread                " auto reload files on change
+
+" read file settings
+set ffs=unix,dos,mac
+set backspace=indent,eol,start 
+
+" Visual settings
 set t_Co=256
 set background=dark
-colorscheme hybrid " solarized lucias (dark) buttercream (light) molokai (dark) jellybean (dark) ir_black (dark) iceberg molokai hemisu
+colorscheme hybrid " solarized lucias (dark) buttercream (light) molokai (dark) jellybean (dark) ir_black (dark) iceberg molokai hemisu 
 
-set autoread " auto reload files on change
+" UI
+set showcmd     " Show cmd below
+set number      " Show line numbers
+set showmatch   " Show matching (improved by matchit plugin)
+set linebreak   "
+set cursorline  " highlight current line
 
-set showmatch
-set cursorline
+set scrolloff=5 " always show 5 lines above and below cursor
+set hidden " hides abandoned buffers
+set lazyredraw  " only redraw if necessary (improves macros performance)
 
-set scrolloff=5
-set number
-set linebreak
+" Draw tabs as >.
+set list
+set listchars=tab:>.
 
+" search settings
 set hlsearch
 set incsearch
 set smartcase
 set ignorecase
 
+" Tabs / spaces
 set expandtab
 set autoindent
 set smartindent
 set smarttab
+autocmd FileType make set noexpandtab " Tabs in make files
+
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4 
 
-" Tabs in make files
-autocmd FileType make set noexpandtab 
-
-set list
-set listchars=tab:>.
-
-set ffs=unix,dos,mac
-set backspace=indent,eol,start 
-
-" settings for complete in commandline: first longest then list
+" autocomplete cmdline
 set wildmenu
 set wildmode=longest,list:longest
 
@@ -100,18 +108,17 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
-" buffer movement
-set hidden " hides abandoned buffers
-
 " Close the current buffer and move to the previous one
 nmap <leader>bq :bp <BAR> bd #<CR>
 
-" Diff setings
+" Diff settings gitgutter
 if &diff
     set diffopt+=iwhite " ignore white spaces in diff mode
+    set diffopt+=vertical
 endif
 
-set diffopt+=vertical
+" ctrlp settings
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 " airline settings 
 set laststatus                            =2
@@ -138,12 +145,6 @@ nmap ga <Plug>(EasyAlign)
 
 " Tagbar settings
 nnoremap <silent> <Leader>T :TagbarToggle<CR>
-
-" ycm settings
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_autoclose_preview_window_after_insertion = 1
-
 
 " latexbox settings: necessary for auto viewing and highlighting properly
 let g:LatexBox_latexmk_options = "-pdfps"
