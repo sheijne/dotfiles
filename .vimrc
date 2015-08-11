@@ -39,6 +39,7 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'valloric/MatchTagAlways'
 Plugin 'vim-scripts/closetag.vim'
 Plugin 'tpope/vim-unimpaired'
+Plugin 'unblevable/quick-scope'
 
 " General settings
 let mapleader = " "         " Spacebar map leader
