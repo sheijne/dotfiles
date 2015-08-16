@@ -2,9 +2,7 @@
 set nocompatible          
 filetype off             
 
-
 " vundle
-
 " Linux: (just check path really)
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
@@ -39,7 +37,7 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'valloric/MatchTagAlways'
 Plugin 'vim-scripts/closetag.vim'
 Plugin 'tpope/vim-unimpaired'
-Plugin 'unblevable/quick-scope'
+Plugin 'Valloric/YouCompleteMe'
 
 " General settings
 let mapleader = " "         " Spacebar map leader
@@ -113,10 +111,8 @@ nnoremap <C-H> <C-W><C-H>
 nmap <leader>bq :bp <BAR> bd #<CR>
 
 " Diff settings gitgutter
-if &diff
-    set diffopt+=iwhite " ignore white spaces in diff mode
-    set diffopt+=vertical
-endif
+set diffopt+=iwhite " ignore white spaces in diff mode
+set diffopt+=vertical
 
 " ctrlp settings
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
