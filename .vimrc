@@ -48,7 +48,7 @@ set backspace=indent,eol,start
 " Visual settings
 set t_Co=256
 set background=dark
-colorscheme hybrid " solarized lucias (dark) buttercream (light) molokai (dark) jellybean (dark) ir_black (dark) iceberg molokai hemisu 
+colorscheme hybrid " lucius (dark) molokai (dark) jellybean (dark) ir_black (dark) iceberg molokai hemisu apprentice
 
 " UI
 set showcmd     " Show cmd below
