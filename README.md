@@ -1,5 +1,6 @@
-Vim configurations
+My Dotf iles configurations
 ==================
 
-Meant for linux: windows users have to uncomment the specified lines in vimrc.
-Requires installed vundle: https://github.com/gmarik/Vundle.vim
+* vim configurations
+* tmux configurations 
+
