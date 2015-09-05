@@ -18,6 +18,7 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 nmap <leader>gs :Gstatus<cr>
 nmap <leader>gc :Gcommit<cr>
 nmap <leader>gd :Gdiff<cr>
+nmap <leader>gp :Gpush<cr>
 
 " settings nerdtree(tabs): always open and focus on files if opening
 map <silent> <Leader>e :NERDTreeToggle<CR>
