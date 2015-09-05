@@ -12,26 +12,7 @@ call vundle#rc()
 " let path='~/vimfiles/bundle'
 " call vundle#rc(path)
 
-Plugin 'gmarik/vundle'
-
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tmhedberg/matchit'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-fugitive'
-Plugin 'justinmk/vim-syntax-extra'
-Plugin 'majutsushi/tagbar'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'bling/vim-airline'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'rking/ag.vim'
-Plugin 'Raimondi/delimitMate'
-Plugin 'junegunn/vim-easy-align'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'christoomey/vim-tmux-navigator'
+so .vim/.pluginsrc
 
 " General settings
 let mapleader = " "         " Spacebar map leader
@@ -48,7 +29,7 @@ set backspace=indent,eol,start
 " Visual settings
 set t_Co=256
 set background=dark
-colorscheme hybrid " lucius (dark) molokai (dark) jellybean (dark) ir_black (dark) iceberg molokai hemisu apprentice
+colorscheme jellybeans " lucius (dark) molokai (dark) jellybean (dark) ir_black (dark) iceberg molokai hemisu apprentice hybrid
 
 " UI
 set showcmd     " Show cmd below
@@ -141,21 +122,9 @@ nnoremap <silent> <Leader>T :TagbarToggle<CR>
 let g:LatexBox_latexmk_options = "-pdfps"
 let g:LatexBox_latexmk_preview_continuously=1
 
-" Drupal stuff
-if has("autocmd")
-  " Drupal *.module and *.install files.
-  augroup module
-    autocmd BufRead,BufNewFile *.module set filetype=php
-    autocmd BufRead,BufNewFile *.install set filetype=php
-    autocmd BufRead,BufNewFile *.test set filetype=php
-    autocmd BufRead,BufNewFile *.inc set filetype=php
-    autocmd BufRead,BufNewFile *.profile set filetype=php
-    autocmd BufRead,BufNewFile *.view set filetype=php
-  augroup END
-endif 
-
 " Regular files need spelling and no highlight end 
 augroup noProg
     autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us 
     autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us 
+    autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us 
 augroup END

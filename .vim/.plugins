@@ -1,0 +1,22 @@
+Plugin 'gmarik/vundle'
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tmhedberg/matchit'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'justinmk/vim-syntax-extra'
+Plugin 'majutsushi/tagbar'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'bling/vim-airline'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'rking/ag.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'christoomey/vim-tmux-navigator'
+
+
