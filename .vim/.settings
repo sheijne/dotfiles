@@ -1,0 +1,85 @@
+filetype plugin indent on   " Identify language specific indent options
+filetype plugin on
+syntax on                   " use syntax..
+
+set autoread                " auto reload files on change
+
+" read file settings
+set ffs=unix,dos,mac
+set backspace=indent,eol,start 
+
+" Visual settings
+set t_Co=256
+set background=dark
+colorscheme jellybeans " lucius (dark) molokai (dark) jellybean (dark) ir_black (dark) iceberg molokai hemisu apprentice hybrid
+
+" UI
+set showcmd     " Show cmd below
+set number      " Show line numbers
+set showmatch   " Show matching (improved by matchit plugin)
+set linebreak   "
+set cursorline  " highlight current line
+
+set scrolloff=5 " always show 5 lines above and below cursor
+set hidden " hides abandoned buffers
+set lazyredraw  " only redraw if necessary (improves macros performance)
+
+" Draw tabs as >.
+set list
+set listchars=tab:>.
+
+" search settings
+set hlsearch
+set incsearch
+set smartcase
+set ignorecase
+
+" Tabs / spaces
+set expandtab
+set autoindent
+set smartindent
+set smarttab
+autocmd FileType make set noexpandtab " Tabs in make files
+
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4 
+
+" autocomplete cmdline
+set wildmenu
+set wildmode=longest,list:longest
+
+" Diff settings gitgutter
+set diffopt+=iwhite " ignore white spaces in diff mode
+set diffopt+=vertical
+
+" ctrlp settings
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+" airline settings 
+set laststatus                            =2
+let g:airline#extensions#tabline#enabled  = 1    " Enable the list of buffers
+let g:airline#extensions#tabline#fnamemod = ':t' " show just name
+
+" Settings of syntastic
+let g:syntastic_cpp_compiler_options     = '-std=c++11'
+let g:syntastic_always_populate_loc_list = 1
+
+" settings nerdtree(tabs): always open and focus on files if opening
+let g:nerdtree_tabs_focus_on_files = 1
+let g:NERDTreeShowHidden           = 1
+
+" delimitMate settings
+let delimitMate_expand_cr=1
+
+" latexbox settings: necessary for auto viewing and highlighting properly
+let g:LatexBox_latexmk_options = "-pdfps"
+let g:LatexBox_latexmk_preview_continuously=1
+
+
+" Regular files need spelling and no highlight end 
+augroup noProg
+    autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us 
+    autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us 
+    autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us 
+augroup END

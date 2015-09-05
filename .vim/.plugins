@@ -18,5 +18,5 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'christoomey/vim-tmux-navigator'
-
+Plugin 'benmills/vimux' 
 

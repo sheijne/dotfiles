@@ -1,0 +1,37 @@
+let mapleader = " "         " Spacebar map leader
+nmap <CR> :
+
+" mappings: for long lines over multiple rows, do proper navigation
+map j gj
+map k gk
+
+" Easier navigations through windows
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Close the current buffer and move to the previous one
+nmap <leader>bq :bp <BAR> bd #<CR>
+
+" Fugitive mappings
+nmap <leader>gs :Gstatus<cr>
+nmap <leader>gc :Gcommit<cr>
+nmap <leader>gd :Gdiff<cr>
+
+" settings nerdtree(tabs): always open and focus on files if opening
+map <silent> <Leader>e :NERDTreeToggle<CR>
+
+" Easy align settings
+" Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
+vmap <Enter> <Plug>(EasyAlign) 
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
+" Tagbar 
+nnoremap <silent> <Leader>T :TagbarToggle<CR>
+
+" Vimux 
+nmap <leader>rm :VimuxRunCommand 'make'<CR>
+nmap <leader>rc :VimuxRunCommand 'make clean'<CR>
+nmap <leader>rt :VimuxRunCommand 'make && ./test.sh'<CR>
