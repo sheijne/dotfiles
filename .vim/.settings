@@ -83,3 +83,9 @@ augroup noProg
     autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us 
     autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us 
 augroup END
+
+" rainbow settings
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
