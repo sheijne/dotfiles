@@ -84,6 +84,9 @@ augroup noProg
     autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us 
 augroup END
 
+" supertab settings (autocomplete)
+let g:SuperTabLongestEnhanced=1
+
 " rainbow settings
 au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
