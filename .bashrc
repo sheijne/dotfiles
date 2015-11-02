@@ -15,6 +15,7 @@ alias tmux="tmux -2"
 alias ls="ls --color=auto"
 
 PS1="\u:\w\$ ${GREEN}"
+trap '[[ -t 1 ]] && tput sgr0' DEBUG
 
 # tmux cd
 tc()
