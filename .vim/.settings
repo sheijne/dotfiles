@@ -49,9 +49,6 @@ set softtabstop=4
 set wildmenu
 set wildmode=longest,list:longest
 
-" Autocomplete 
-set completeopt=longest,menuone
-
 " Diff settings gitgutter
 set diffopt+=iwhite " ignore white spaces in diff mode
 set diffopt+=vertical
@@ -86,9 +83,6 @@ augroup noProg
     autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_us 
     autocmd BufRead,BufNewFile *.md setlocal spell spelllang=en_us 
 augroup END
-
-" supertab settings (autocomplete)
-let g:SuperTabLongestEnhanced=1
 
 " rainbow settings
 au VimEnter * RainbowParenthesesToggle
