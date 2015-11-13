@@ -49,6 +49,9 @@ set softtabstop=4
 set wildmenu
 set wildmode=longest,list:longest
 
+" Autocomplete 
+set completeopt=longest,menuone
+
 " Diff settings gitgutter
 set diffopt+=iwhite " ignore white spaces in diff mode
 set diffopt+=vertical
