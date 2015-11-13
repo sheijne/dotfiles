@@ -37,3 +37,12 @@ nmap <leader>rm :VimuxRunCommand 'make'<CR>
 nmap <leader>rc :VimuxRunCommand 'make clean'<CR>
 nmap <leader>rt :VimuxRunCommand 'make && ./test.sh'<CR>
 nmap <leader>rl :VimuxRunCommand './latexmk.sh'<CR>
+
+" YCM
+nnoremap <leader>yg :YcmCompleter GoTo<CR>
+nnoremap <leader>yf :YcmCompleter FixIt<CR>
+nnoremap <leader>yd :YcmCompleter GetDoc<CR>
+nnoremap <leader>yt :YcmCompleter GetType<CR>
+nnoremap <leader>ye :YcmShowDetailedDiagnostic<CR>
+nnoremap <leader>yl :YcmDiags<CR>
+
