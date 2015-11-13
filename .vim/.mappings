@@ -46,3 +46,6 @@ nnoremap <leader>yt :YcmCompleter GetType<CR>
 nnoremap <leader>ye :YcmShowDetailedDiagnostic<CR>
 nnoremap <leader>yl :YcmDiags<CR>
 
+" Doxygen
+nnoremap <leader>d :Dox<CR>
+
