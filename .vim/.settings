@@ -4,6 +4,7 @@ syntax on                   " use syntax..
 let g:load_doxygen_syntax=1
 
 set autoread                " auto reload files on change
+set noswapfile
 
 " read file settings
 set ffs=unix,dos,mac
