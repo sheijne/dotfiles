@@ -1,0 +1,19 @@
+snippet hfile
+#ifndef ${1:HEADER_HPP}
+#define $1
+
+class $2
+{
+	$0
+};
+
+#endif // $1
+endsnippet
+
+snippet vec
+std::vector<${1:value}> ${2:temp};
+endsnippet
+
+snippet map
+std::map<${1:key}, ${2:value}> ${3:temp};
+endsnippet
