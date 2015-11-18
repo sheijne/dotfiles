@@ -28,9 +28,20 @@ mv .vim/plugins/cscope_maps.vim ~/.vim/plugins
 mv .config/nvim ~.config/nvim
 
 # install stuff
+
+# dependencies
+apt-get install build-essential cmake
+apt-get install python-dev
+pip2 install neovim
+pip3 install neovim
+
+# install vim plugins
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/vundle
 vim +PluginInstall +qall
 
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer
+
 # cleanup
-cd ..
+cd ../..
 rm -r dotfiles

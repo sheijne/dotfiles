@@ -33,9 +33,9 @@ nmap ga <Plug>(EasyAlign)
 nnoremap <silent> <Leader>T :TagbarToggle<CR>
 
 " Vimux 
-nmap <leader>rm :VimuxRunCommand 'make'<CR>
+nmap <leader>rm :VimuxRunCommand './make.sh'<CR>
 nmap <leader>rc :VimuxRunCommand 'make clean'<CR>
-nmap <leader>rt :VimuxRunCommand 'make && ./test.sh'<CR>
+nmap <leader>rt :VimuxRunCommand './make.sh && ./test.sh'<CR>
 nmap <leader>rl :VimuxRunCommand './latexmk.sh'<CR>
 
 " YCM
