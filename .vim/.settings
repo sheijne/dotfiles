@@ -76,6 +76,7 @@ let g:NERDTreeShowHidden           = 1
 
 " delimitMate settings
 let delimitMate_expand_cr=1
+imap <expr> <CR> pumvisible() ? "\<c-y>" : "<Plug>delimitMateCR " fix bracket enter
 
 " latexbox settings: necessary for auto viewing and highlighting properly
 let g:LatexBox_latexmk_options = "-pdfps"
