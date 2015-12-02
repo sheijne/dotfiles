@@ -49,3 +49,4 @@ nnoremap <leader>yl :YcmDiags<CR>
 " Doxygen
 nnoremap <leader>d :Dox<CR>
 
+imap <expr> <CR> pumvisible() ? "\<c-y>" : "<Plug>delimitMateCR"
