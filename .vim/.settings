@@ -95,6 +95,10 @@ au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
+" ultisnips 
+let g:UltiSnipsUsePythonVersion = 2
+
+
 " YCM + ultisnips
 function! g:UltiSnips_Complete()
     call UltiSnips#ExpandSnippet()
