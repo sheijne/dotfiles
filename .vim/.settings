@@ -28,7 +28,7 @@ set lazyredraw  " only redraw if necessary (improves macros performance)
 
 " Draw tabs as >.
 set list
-set listchars=tab:>.
+set listchars=tab:»·,trail:·
 
 " search settings
 set hlsearch
