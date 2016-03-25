@@ -1,28 +1,40 @@
 Plugin 'gmarik/vundle'
 
-Plugin 'scrooloose/nerdtree'
-Plugin 'kien/ctrlp.vim'
-Plugin 'tmhedberg/matchit'
-Plugin 'scrooloose/nerdcommenter'
+" syntax
 Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-fugitive'
 Plugin 'justinmk/vim-syntax-extra'
-Plugin 'majutsushi/tagbar'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-repeat'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'bling/vim-airline'
-Plugin 'flazz/vim-colorschemes'
-Plugin 'rking/ag.vim'
-Plugin 'junegunn/vim-easy-align'
-Plugin 'tpope/vim-unimpaired'
+Plugin 'vim-scripts/cmake.vim-syntax'
+
+" integrations
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'benmills/vimux' 
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'vim-scripts/TaskList.vim'
+Plugin 'rking/ag.vim'
+
+" powertools 
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/DoxygenToolkit.vim'
-Plugin 'SirVer/ultisnips'
-Plugin 'vim-scripts/cmake.vim-syntax'
-Plugin 'Raimondi/delimitMate'
 Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+Plugin 'airblade/vim-gitgutter'
+
+" information in buffer 
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'kien/ctrlp.vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'vim-scripts/TaskList.vim'
+
+" easy commands
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
+Plugin 'junegunn/vim-easy-align'
+Plugin 'Raimondi/delimitMate'
+
+" easy motion 
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tmhedberg/matchit'
+Plugin 'Lokaltog/vim-easymotion'
+
+" fancy looks
+Plugin 'bling/vim-airline'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'kien/rainbow_parentheses.vim'
