@@ -43,6 +43,7 @@ nnoremap <leader>yg :YcmCompleter GoTo<CR>
 nnoremap <leader>yf :YcmCompleter FixIt<CR>
 nnoremap <leader>yd :YcmCompleter GetDoc<CR>
 nnoremap <leader>yt :YcmCompleter GetType<CR>
+nnoremap <leader>yp :YcmCompleter GetParent<CR>
 nnoremap <leader>ye :YcmShowDetailedDiagnostic<CR>
 nnoremap <leader>yl :YcmDiags<CR>
 

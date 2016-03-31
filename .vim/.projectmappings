@@ -1,0 +1,2 @@
+autocmd FileType tex nmap <buffer> <Leader>pi ysiw}i\textit<esc>
+autocmd FileType tex nmap <buffer> <Leader>pb ysiw}i\textbf<esc>
