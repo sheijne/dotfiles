@@ -12,7 +12,7 @@ set backspace=indent,eol,start
 " Visual settings
 set t_Co=256
 set background=dark
-colorscheme hybrid " lucius jellybean ir_black  iceberg molokai hemisu apprentice hybrid
+colorscheme hybrid " lucius jellybean ir_black  iceberg molokai hemisu apprentice hybrid zenburn desertEx xoria256 sorcerer
 
 " UI
 set showcmd     " Show cmd below
