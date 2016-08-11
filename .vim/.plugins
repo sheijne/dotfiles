@@ -8,6 +8,7 @@ Plugin 'vim-scripts/cmake.vim-syntax'
 " integrations
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'rking/ag.vim'
+Plugin 'benmills/vimux'
 
 " powertools 
 Plugin 'Valloric/YouCompleteMe'
