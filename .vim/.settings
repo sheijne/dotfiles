@@ -11,7 +11,7 @@ set backspace=indent,eol,start
 
 " Visual settings
 set t_Co=256
-colorscheme badwolf " lucius jellybean ir_black  iceberg molokai hemisu apprentice hybrid zenburn desertEx xoria256 sorcerer
+colorscheme jellybeans " lucius ir_black iceberg molokai hemisu apprentice hybrid zenburn desertEx xoria256 sorcerer badwolf 
 set background=dark
 
 " UI
@@ -68,6 +68,7 @@ let g:airline#extensions#tabline#fnamemod = ':t' " show just name
 " Settings of syntastic
 let g:syntastic_cpp_compiler_options     = '-std=c++11'
 let g:syntastic_always_populate_loc_list = 1
+autocmd VimEnter * SyntasticToggleMode
 
 " settings nerdtree(tabs): always open and focus on files if opening
 let g:nerdtree_tabs_focus_on_files = 1

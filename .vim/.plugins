@@ -4,6 +4,7 @@ Plugin 'gmarik/vundle'
 Plugin 'scrooloose/syntastic'
 Plugin 'justinmk/vim-syntax-extra'
 Plugin 'vim-scripts/cmake.vim-syntax'
+Plugin 'rust-lang/rust.vim'
 
 " integrations
 Plugin 'christoomey/vim-tmux-navigator'
