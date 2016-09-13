@@ -11,8 +11,8 @@ set backspace=indent,eol,start
 
 " Visual settings
 set t_Co=256
-colorscheme badwolf " lucius jellybean ir_black  iceberg molokai hemisu apprentice hybrid zenburn desertEx xoria256 sorcerer
 set background=dark
+colorscheme jellybeans " lucius ir_black  iceberg molokai hemisu apprentice hybrid zenburn desertEx xoria256 sorcerer badwolf 
 
 " UI
 set showcmd     " Show cmd below
@@ -53,6 +53,7 @@ set wildmode=longest,list:longest
 " YCM settings
 let g:ycm_autoclose_preview_window_after_insertion=1
 let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+
 " Diff settings gitgutter
 set diffopt+=iwhite " ignore white spaces in diff mode
 set diffopt+=vertical
@@ -66,7 +67,7 @@ let g:airline#extensions#tabline#enabled  = 1    " Enable the list of buffers
 let g:airline#extensions#tabline#fnamemod = ':t' " show just name
 
 " Settings of syntastic
-let g:syntastic_cpp_compiler_options     = '-std=c++11'
+let g:syntastic_cpp_compiler_options     = '-std=c++14'
 let g:syntastic_always_populate_loc_list = 1
 
 " settings nerdtree(tabs): always open and focus on files if opening
@@ -80,7 +81,6 @@ let delimitMate_expand_cr=1
 let g:LatexBox_latexmk_options = "-pdfps"
 let g:LatexBox_latexmk_preview_continuously=1
 
-
 " Regular files need spelling and no highlight end 
 augroup noProg
     autocmd BufRead,BufNewFile *.txt setlocal spell spelllang=en_us 
@@ -89,13 +89,12 @@ augroup noProg
 augroup END
 
 " rainbow settings
-au VimEnter * RainbowParenthesesToggle
 au Syntax * RainbowParenthesesLoadRound
 au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
+au VimEnter * RainbowParenthesesToggle
+
 
 " ultisnips 
 let g:UltiSnipsUsePythonVersion = 2
 let g:UltiSnipsExpandTrigger="<c-j>"
-
-" YCM + ultisnips
