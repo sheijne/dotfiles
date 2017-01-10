@@ -17,6 +17,7 @@ Plugin 'vim-scripts/DoxygenToolkit.vim'
 Plugin 'honza/vim-snippets'
 Plugin 'SirVer/ultisnips'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 
 " information in buffer 
 Plugin 'scrooloose/nerdtree'
