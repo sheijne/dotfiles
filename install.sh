@@ -43,5 +43,5 @@ cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
 
 # cleanup
-cd ../..
+cd ../../..
 rm -r dotfiles
